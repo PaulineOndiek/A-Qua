@@ -1,0 +1,11 @@
+@use"../basic/mixins";
+.hero{
+ background-image:url(https://images.pexels.com/photos/9408371/pexels-photo-9408371.jpeg?cs=srgb&dl=pexels-airam-datoon-9408371.jpg&fm=jpg);
+ height:100vh;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+//background:url(https://images.pexels.com/photos/9408371/pexels-photo-9408371.jpeg?cs=srgb&dl=pexels-airam-datoon-9408371.jpg&fm=jpg) no-repeat center center/contain fixed

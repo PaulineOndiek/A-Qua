@@ -1,0 +1,31 @@
+@use"../basic/mixins";
+@use "../basic/inheritance";
+@use"../basic/variables" as *;
+.nav{
+    @include mixins.flex(space-between,center,row,nowrap);
+   h2{
+    font-family: $cursive;
+   }
+   
+    ul{
+    @include mixins.flex(space-between,center,row,nowrap);
+    gap:1em;
+    list-style-type:none;
+    padding:2em 0;
+   }
+  
+li{
+cursor:pointer;
+&:nth-child(3)>button{
+    background:$primary-color;
+}
+&:nth-child(4)>button{
+    background:$transparent;
+}
+
+}
+button{
+    @extend %button;
+     
+    }
+}
